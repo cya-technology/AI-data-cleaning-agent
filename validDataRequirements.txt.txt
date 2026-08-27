@@ -1,0 +1,71 @@
+Client ID
+- Expected format: C followed by exactly 4 digits.
+- Valid example: C0001
+- Invalid examples: 100, C-ABC, Blue Oak Dental
+
+First Name
+- Must contain a person's first name.
+- Alphabetic characters only.
+- Proper capitalization.
+- Correct obvious misspellings only when confidence is high.
+- Invalid examples: 12345, Acme Consulting
+
+Last Name
+- Must contain a person's last name.
+- Alphabetic characters only.
+- Proper capitalization.
+- Correct obvious misspellings only when confidence is high.
+- Invalid examples: 42, Summit Logistics
+
+Email
+- Must follow a valid email format.
+- Must contain a local part, @ symbol, and domain.
+- Do not invent or guess missing information.
+- Invalid examples: 9165550123, not an email, @missingname.com
+
+Phone
+- Must contain a valid 10-digit US phone number.
+- Standard output format: (###) ###-####
+- Numeric-only phone numbers may be reformatted.
+- Invalid examples: unknown, (916)ABC-1234
+
+Company
+- Must contain a company or organization name.
+- Use consistent capitalization.
+- Correct obvious spelling errors when confidence is high.
+- Invalid examples: Sacramento, Healthcare, john@email.com
+
+City
+- Must contain a valid city name.
+- Use proper capitalization.
+- Correct obvious spelling errors when confidence is high.
+- Examples: Sacramento, Roseville, Folsom, Elk Grove, Rocklin,
+  Davis, Auburn, Lincoln, Rancho Cordova, Citrus Heights
+
+State
+- Must use a valid two-letter US state abbreviation.
+- Convert full state names to their two-letter abbreviation.
+- Examples: California -> CA, Nevada -> NV
+- Standardize capitalization: ca -> CA
+
+Industry
+- Must contain one of the approved industry values:
+  Healthcare
+  Legal
+  Manufacturing
+  Technology
+  Retail
+  Finance
+  Logistics
+  Construction
+- Correct obvious misspellings when confidence is high.
+- Example: Healhcare -> Healthcare
+
+Annual Revenue
+- Must be a positive numeric value.
+- Do not include currency symbols or commas in the final output.
+- Valid examples: 250000, 500000, 1250000
+- Convert unambiguous formats:
+  $500K -> 500000
+  1,250,000 -> 1250000
+- Flag values that cannot be safely converted.

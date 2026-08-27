@@ -1,0 +1,19 @@
+Do not overwrite the original file.
+
+Create a new Excel workbook containing:
+
+1. Cleaned_Client_Data
+   - Contains the cleaned data.
+   - Data should be formatted consistently and be suitable for SQL import.
+
+2. Cleaning_Log
+   Include:
+   - Row number
+   - Column name
+   - Original value
+   - Cleaned value
+   - Action taken
+   - Reason for the change
+   - Confidence level
+
+Before completing the task, validate that the cleaned data is internally consistent and identify any remaining records that require human review.
